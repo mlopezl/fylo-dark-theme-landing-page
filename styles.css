@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --Navy-850: hsl(217, 28%, 15%); /*intro and email sign up background */
+    --Navy-900: hsl(218, 28%, 13%); /* main background */
+    --Navy-950: hsl(216, 53%, 9%); /* footer background */
+    --Navy-800: hsl(219, 30%, 18%); /*testimonials background */
+    --Teal-200: hsl(176, 68%, 64%); /*testimonials background */
+    --Cyan-500: hsl(198, 60%, 50%); /*inside call-to-action gradient */
+    --Red-500: hsl(0, 100%, 63%); /*error */
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--White);
+}
+
+body{
+    background-color: var(--Navy-900);
+    color: var(--White);
+    font-family: "Open Sans", sans-serif;
+}
+
+.container{
+    width: 100%;
+}
+
+.hero{
+    background-image: url(./images/bg-curvy-mobile.svg);
+    background-color: var(--Navy-800);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.hero,
+.hero__content,
+.hero__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero__content{
+    gap: 0;
+}
+
+.hero__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0px 15px 0px 15px;
+}
+
+.hero__logo{
+    width: 60px;
+    height: 20px;
+}
+
+.hero__nav ul{
+    width: 50%;
+    max-width: 180px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__nav ul a{
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+}
+
+.hero__content img{
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.hero__title{
+    font-size: 1.4rem;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    line-height: 30px;
+    padding: 0px 15px 0px 15px;
+    width: 90%;
+    z-index: 1;
+}
+
+.hero__info{
+    width: 100%;
+    background-color: var(--Navy-900);
+    padding: 50px 25px 0px 25px;
+    margin-top: -40px;
+    z-index: 0;
+}
+
+.hero__description{
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.hero__button{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right,var(--Teal-200), var(--Cyan-500));
+    color: var(--White);
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 60px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+  img{
+    width: 300px;
+  }
