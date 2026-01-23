@@ -42,11 +42,18 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    margin-bottom: 60px;
 }
 
 .hero,
 .hero__content,
-.hero__info{
+.hero__info,
+.services,
+.service,
+.info,
+.info article,
+.testimonials,
+.comment{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,7 +98,9 @@ body{
     margin-bottom: 30px;
 }
 
-.hero__title{
+.hero__title,
+.service h2,
+.info article h2{
     font-size: 1.4rem;
     font-family: "Raleway", sans-serif;
     text-align: center;
@@ -109,7 +118,9 @@ body{
     z-index: 0;
 }
 
-.hero__description{
+.hero__description,
+.service p,
+.info article p{
     font-size: 0.9rem;
     text-align: center;
 }
@@ -126,6 +137,111 @@ body{
     margin-bottom: 60px;
     font-weight: bold;
     font-size: 0.9rem;
+}
+
+.services{
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.service{
+    gap: 10px;
+    padding: 0px 20px 0px 20px;
+}
+
+.service img{
+    width: 60px;
+    margin-bottom: 30px;
+}
+
+.info{
+    margin-bottom: 60px;
+}
+
+.info img{
+    width: 80vw;
+}
+
+.info article{
+    padding: 0px 15px 0px 15px;
+    gap: 20px;
+}
+
+.services h2,
+.info article h2{
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.info article h2,
+.info article p{
+    text-align: left;
+    padding-left: 15px;
+}
+
+.info__button{
+    width: 150px;
+    height: 25px;
+    background-color: var(--Navy-900);
+    border:  none;
+    border-bottom: 1px solid var(--Teal-200);
+    align-self: flex-start;
+    margin-left: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.info__button a{
+    color: var(--Teal-200);
+}
+
+.info__button svg{
+    width: 20px;
+}
+
+.testimonials{
+    margin-bottom: 60px;
+}
+
+.comment{
+    position: relative;
+    width: 80vw;
+    background-color: var(--Navy-800);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 0.7rem;
+    border-radius: 5px;
+}
+
+.comment__content{
+    line-height: 18px;
+}
+
+.comment__quotes{
+    position: absolute;
+    width: 20px;
+    top: -20px;
+    left: 0px;
+}
+
+.comment__info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comment__info h2{
+    font-size: 0.9rem;
+}
+
+.comment__info img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
 
   img{
