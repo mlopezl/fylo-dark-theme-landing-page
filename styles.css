@@ -326,6 +326,12 @@ body{
     font-family: "Raleway", sans-serif;
 }
 
+.footer__info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 
 .footer__logo{
     width: 150px;
@@ -487,6 +493,11 @@ body{
 }
 
 @media(min-width: 769px){
+    .footer{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
        .footer__logo{
         margin-left: 100px;
     }
