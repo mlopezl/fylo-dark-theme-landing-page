@@ -26,9 +26,9 @@
         <nav class="hero__nav">
           <img src="./images/logo.svg" alt="Fylo logo" class="hero__logo" />
           <ul>
-            <li><a href="">Features</a></li>
-            <li><a href="">Team</a></li>
-            <li><a href="">Sign In</a></li>
+            <li><a href="#services">Features</a></li>
+            <li><a href="#testimonials">Team</a></li>
+            <li><a href="#form">Sign In</a></li>
           </ul>
         </nav>
         <section class="hero__content">
@@ -49,7 +49,7 @@
           </section>
         </section>
       </section>
-      <main class="services">
+      <main id="services" class="services">
         <article class="service">
           <img
             src="./images/icon-access-anywhere.svg"
@@ -155,7 +155,7 @@
           </button>
         </article>
       </section>
-      <section class="testimonials">
+      <section id="testimonials" class="testimonials">
         <article class="comment">
           <img
             src="./images/bg-quotes.png"
@@ -204,7 +204,7 @@
           </footer>
         </article>
       </section>
-      <form class="form">
+      <form id="form" class="form">
         <h2 class="form__title">Get early access today</h2>
         <p class="form__description">
           It only takes a minute to sign up and our free starter tier is
@@ -212,11 +212,17 @@
           be happy to help you.
         </p>
         <section class="form__interactions">
-          <input
-            class="form__email"
-            type="email"
-            placeholder="email@example.com"
-          />
+          <div class="form__input">
+            <input
+              class="form__email"
+              type="email"
+              placeholder="email@example.com"
+            />
+            <p class="form__validation-text hide">
+              Please enter a valid email address
+            </p>
+          </div>
+
           <button class="form__button" type="submit">
             Get Started For Free
           </button>
@@ -260,18 +266,19 @@
           <nav class="footer__social">
             <ul>
               <li>
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
               </li>
               <li>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
               </li>
               <li>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
               </li>
             </ul>
           </nav>
         </section>
       </footer>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
