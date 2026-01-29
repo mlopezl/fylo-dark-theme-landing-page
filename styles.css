@@ -348,7 +348,8 @@ body {
   cursor: pointer;
 }
 
-.form__button:hover {
+.form__button:hover,
+.form__button:focus {
   background: linear-gradient(to right, var(--Teal-200), var(--Teal-200));
 }
 
@@ -424,22 +425,32 @@ body {
 }
 
 .footer__about-us h2,
-.footer__contact-us h2 {
-  font-size: 1rem;
+.footer__contact-us h2{
   margin-bottom: 10px;
+}
+
+.footer__about-us h2 a,
+.footer__contact-us h2 a{
+  font-size: 1rem;
   font-weight: 400;
   transition: all 200ms ease;
 }
 
-.footer__about-us h2:hover,
-.footer__contact-us h2:hover {
+.footer__about-us h2:hover a,
+.footer__contact-us h2:hover a,
+.footer__about-us h2 a:focus,
+.fotter__contact-us a:focus{
   font-weight: bold;
+  outline: none;
 }
 
 .footer__about-us a:hover,
-.footer__contact-us a:hover {
+.footer__contact-us a:hover,
+.footer__about-us a:focus,
+.footer__contact-us a:focus {
   font-weight: bold;
   transition: all 200ms ease;
+  outline: none;
 }
 
 .footer__about-us ul,
@@ -478,12 +489,16 @@ body {
   transition: all 300ms ease;
 }
 
-.footer__social li:hover {
+.footer__social li:hover,
+.footer__social li:focus-within {
   border: 1px solid var(--Teal-200);
 }
 
-.footer__social li:hover i {
+.footer__social li:hover i,
+.footer__social li a:focus {
   color: var(--Teal-200);
+  outline: none;
+  border: none;
 }
 
 .hide {
